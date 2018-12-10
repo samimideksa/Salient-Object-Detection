@@ -45,10 +45,10 @@ def predict(img_bytes,gpu_fraction = 1.0):
 
 
 
-img = Image.open("man-eaten-by-lions.jpg")
-img = img.resize((320,320))
-img_b = img.tobytes() 
-i = predict(img_b)
-image = Image.frombytes(data=i,size=(320,320),mode='L')
-image.convert('L').save("test.png", "PNG", optimize=True)
+# img = Image.open("man-eaten-by-lions.jpg")
+# img = img.resize((320,320))
+# img_b = img.tobytes() 
+# i = predict(img_b)
+# image = Image.frombytes(data=i,size=(320,320),mode='L')
+# image.convert('L').save("test.png", "PNG", optimize=True)
 
