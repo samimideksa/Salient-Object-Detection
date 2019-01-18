@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message ImageFile {
+    bytes image = 1;
+}
+
+service DetectObject {
+    rpc DetectObject(ImageFile) returns (ImageFile){}
+}
+
