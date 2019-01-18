@@ -13,7 +13,7 @@ import torch
 
 class TestSuiteGrpc(unittest.TestCase):
     def setUp(self):
-    	self.image = Image.open('/home/samuel/projects/Salient-Object-Detection/test/animal2.jpg')
+    	self.image = Image.open('/test/animal2.jpg')
     	self.server = Server()
     	self.server.start_server()
     	self.client = ClientTest()
