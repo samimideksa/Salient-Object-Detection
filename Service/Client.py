@@ -38,7 +38,7 @@ class ClientTest():
 
 	def send_request(self,stub,im):
 		print("here 1")
-		img = Image.open(open(im, rb)
+		img = Image.open(open(im, rb))
 		out_file_name = self.image_output+'.png'
 		img = img.resize((480,320))
 		img_b = img.tobytes() 
